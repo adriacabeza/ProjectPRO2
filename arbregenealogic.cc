@@ -22,14 +22,14 @@ void arbregenealogic::llegir_funcio(Arbre<string>& a)
 
 
 void arbregenealogic::escriure_funcio(Arbre<string>& a) const
-{
+{ //uiuiui aixi aixi
   if(a.es_buit()) cout <<  " $";
   else
   {
     Arbre <string> fd, fe;
     string arrel= a.arrel();
     a.fills(fe,fd);
-    cout << " " << arrel;
+    cout << " caca " << arrel;
     escriure_funcio(fe);
     escriure_funcio(fd);
   }
